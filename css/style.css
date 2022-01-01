@@ -84,6 +84,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 article,
 aside,
@@ -104,6 +105,7 @@ body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  -webkit-font-smoothing: antialiased;
 }
 ol,
 ul {
@@ -143,6 +145,18 @@ img {
 }
 .header {
   background-color: #141618;
+}
+
+.btn {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  background: #316aff;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 .header .container {
   height: 60px;
@@ -214,4 +228,39 @@ img {
   background-color: #36855b;
   border-radius: 4px;
   padding: 0 15px;
+}
+
+/*Banner Alanı*/
+.banner {
+  background: linear-gradient(170deg, #212a39, #181e28);
+}
+.banner .container {
+  min-height: 50vh;
+  display: flex;
+  padding: 70px 0;
+  align-items: center;
+}
+.banner .container .banner-box {
+  width: 50%;
+}
+.banner .container .banner-box img {
+  max-width: 100%;
+}
+.banner .container .banner-box.banner-image {
+  padding-left: 150px;
+}
+
+.banner .container .banner-box h1 {
+  font-size: 48px;
+  color: #fff;
+  line-height: 56px;
+}
+.banner .container .banner-box p {
+  font-size: 24px;
+  color: #b0b6be;
+  margin-top: 10px;
+}
+
+.banner .container .banner-box .btn {
+  margin-top: 65px;
 }
