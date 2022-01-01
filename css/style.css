@@ -1,1 +1,217 @@
-/**/
+/*RESET CSS*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 14px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+.clear {
+  clear: both;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #141618;
+}
+.header .container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 40px;
+  color: #fff;
+}
+.header .menu ul li a {
+  color: rgb(255, 255, 255, 0.8);
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.header .menu ul li a i {
+  margin-right: 10px;
+}
+.header .menu ul li a:hover {
+  color: #fff;
+}
+.header .search {
+  display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-left: auto;
+}
+.header .search input {
+  height: 34px;
+  width: 250px;
+  background-color: #21252d;
+  padding: 0 10px;
+}
+.header .search input::placeholder {
+  color: rgb(255, 255, 255, 0.8);
+}
+.header .search button {
+  height: 34px;
+  width: 32px;
+  background-color: #21252d;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.header .search button:hover {
+  background-color: #316aff;
+}
+.header .login-button ul {
+  display: flex;
+}
+
+.header .login-button ul li {
+  margin-left: 15px;
+}
+
+.header .login-button ul li a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.header .login-button ul li a:hover {
+  color: #fff;
+}
+.header .login-button ul li.join-now-button {
+  background-color: #36855b;
+  border-radius: 4px;
+  padding: 0 15px;
+}
