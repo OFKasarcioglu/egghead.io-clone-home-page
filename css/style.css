@@ -1,104 +1,4 @@
-/*RESET CSS*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-input,
-select,
-textarea,
-button,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+@import "reset.css";
 body {
   line-height: 1;
   background: #f4f7f9;
@@ -150,10 +50,10 @@ img {
   top: 0;
   z-index: 10;
 }
-.btn.yesil-renk{
+.btn.yesil-renk {
   background-color: #36855b;
 }
-.btn:hover{
+.btn:hover {
   transform: scale(1.05);
 }
 
@@ -204,7 +104,7 @@ img {
   padding: 0 10px;
   color: #fff;
 }
-.header .search input:focus::placeholder{
+.header .search input:focus::placeholder {
   opacity: 0;
   transition: 200ms opacity;
 }
@@ -259,15 +159,14 @@ img {
 .banner .container .banner-box {
   width: 50%;
 }
-.banner .container .banner-box.banner-image a{
+.banner .container .banner-box.banner-image a {
   transition: 200ms transform;
   display: block;
 }
 .banner .container .banner-box img {
   max-width: 100%;
-
 }
-.banner .container .banner-box.banner-image a:hover{
+.banner .container .banner-box.banner-image a:hover {
   transform: scale(1.1);
 }
 .banner .container .banner-box.banner-image {
@@ -376,145 +275,135 @@ img {
   max-width: 60%;
   line-height: 36px;
 }
-.Yorum .user{
-    display: flex;
-    align-items: center;
-    color: rgb(0, 0, 0, .7);
-
+.Yorum .user {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0, 0.7);
 }
 
-.Yorum .user img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 8px;
+.Yorum .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 8px;
 }
 /*SECTION STEP */
 
-.SectionStep{
+.SectionStep {
   display: flex;
   padding: 0 30px;
-
-
 }
-.SectionStep > div{
+.SectionStep > div {
   width: 50%;
   min-width: 50%;
-
 }
-.SectionStep .Photo img{
+.SectionStep .Photo img {
   width: 100%;
   display: block;
 }
-.SectionStep .IcerikStep h3{
+.SectionStep .IcerikStep h3 {
   font-size: 36px;
   margin-bottom: 30px;
 }
-.SectionStep .IcerikStep p{
+.SectionStep .IcerikStep p {
   font-size: 18px;
   line-height: 28px;
   color: #111;
 }
-.SectionStep .IcerikStep .btn{
+.SectionStep .IcerikStep .btn {
   margin-top: 50px;
-
 }
-.SectionStep .Photo{
+.SectionStep .Photo {
   padding-top: 100px;
 }
 
 /*FOOTER*/
 
-.footer{
-  background-color:#141618 ;
+.footer {
+  background-color: #141618;
 }
 
- .footer .container{
-   padding: 80px 0;
-   display: flex;
-   flex-direction:column;
- }
+.footer .container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+}
 
-.footer .FooterLogo{
+.footer .FooterLogo {
   margin-bottom: 40px;
 }
-.footer .FooterMenu{
+.footer .FooterMenu {
   display: flex;
 }
-.footer .FooterMenu nav{
+.footer .FooterMenu nav {
   margin-right: 32px;
 }
-.footer .FooterMenu nav h6{
-letter-spacing: 1.6px;
-color: #fff;
-margin-bottom: 15px;
+.footer .FooterMenu nav h6 {
+  letter-spacing: 1.6px;
+  color: #fff;
+  margin-bottom: 15px;
 }
-.footer .FooterMenu nav ul li{
+.footer .FooterMenu nav ul li {
   margin-bottom: 6px;
 }
 
-.footer .FooterMenu nav ul li  a{
-display:block;
-font-size: 16px;
-line-height: 150%;
-color: rgb(255, 255, 255, .5);
-transition: 200ms  color;
+.footer .FooterMenu nav ul li a {
+  display: block;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(255, 255, 255, 0.5);
+  transition: 200ms color;
 }
-.footer .FooterMenu nav ul li  a:hover{
+.footer .FooterMenu nav ul li a:hover {
   color: #fff;
-  }
+}
 
-  .footer .FooterMenu .FooterSearch{
-    margin-left: auto;
+.footer .FooterMenu .FooterSearch {
+  margin-left: auto;
+}
 
-  }
-  
-  .footer .FooterMenu .FooterSearch h6{
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 16px;
-  }
-  .footer .FooterMenu .FooterSearch form{
-    display: flex;
-    border-radius: 4px;
-    overflow: hidden;
-  }
+.footer .FooterMenu .FooterSearch h6 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer .FooterMenu .FooterSearch form {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
 
-  .footer .FooterMenu .FooterSearch input{
-   height: 48px;
-   width: 375px;
-   background-color: #21252d;
-   padding: 0 15px;
-   color: #fff;
+.footer .FooterMenu .FooterSearch input {
+  height: 48px;
+  width: 375px;
+  background-color: #21252d;
+  padding: 0 15px;
+  color: #fff;
+}
+.footer .FooterMenu .FooterSearch button {
+  width: 48px;
+  height: 48px;
+  background: #316aff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-  }
-  .footer .FooterMenu .FooterSearch button{
-    width: 48px;
-    height: 48px;
-    background:#316aff;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
+.footer .Tescil {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .Tescil a {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 200ms color;
+}
 
-  }
-
-  .footer .Tescil{
-    padding-top:25px;
-    margin-top: 25px;
-    border-top: 1px solid rgba(255, 255, 255, .1);
-    color:rgba(255, 255, 255, .5) ;
-  }
-  .footer .Tescil a{
-    margin-right: 10px;
-    color:rgba(255, 255, 255, .5) ;
-    transition: 200ms color;
-
-  }
-
-  .footer .Tescil a:hover{
-    color: #fff;
-
-  }
-  .footer .Tescil .Haklarim{
-    margin-left: 10px;
-  }
+.footer .Tescil a:hover {
+  color: #fff;
+}
+.footer .Tescil .Haklarim {
+  margin-left: 10px;
+}
