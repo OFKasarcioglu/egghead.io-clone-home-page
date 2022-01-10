@@ -146,6 +146,15 @@ img {
 }
 .header {
   background-color: #141618;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.btn.yesil-renk{
+  background-color: #36855b;
+}
+.btn:hover{
+  transform: scale(1.05);
 }
 
 .btn {
@@ -158,6 +167,7 @@ img {
   letter-spacing: 1px;
   border-radius: 4px;
   text-transform: uppercase;
+  transition: 200ms all;
 }
 .header .container {
   height: 60px;
@@ -192,6 +202,11 @@ img {
   width: 250px;
   background-color: #21252d;
   padding: 0 10px;
+  color: #fff;
+}
+.header .search input:focus::placeholder{
+  opacity: 0;
+  transition: 200ms opacity;
 }
 .header .search input::placeholder {
   color: rgb(255, 255, 255, 0.8);
@@ -244,8 +259,16 @@ img {
 .banner .container .banner-box {
   width: 50%;
 }
+.banner .container .banner-box.banner-image a{
+  transition: 200ms transform;
+  display: block;
+}
 .banner .container .banner-box img {
   max-width: 100%;
+
+}
+.banner .container .banner-box.banner-image a:hover{
+  transform: scale(1.1);
 }
 .banner .container .banner-box.banner-image {
   padding-left: 150px;
@@ -255,6 +278,7 @@ img {
   font-size: 48px;
   color: #fff;
   line-height: 56px;
+  font-weight: 500;
 }
 .banner .container .banner-box p {
   font-size: 24px;
@@ -365,3 +389,132 @@ img {
     border-radius: 50%;
     margin: 8px;
 }
+/*SECTION STEP */
+
+.SectionStep{
+  display: flex;
+  padding: 0 30px;
+
+
+}
+.SectionStep > div{
+  width: 50%;
+  min-width: 50%;
+
+}
+.SectionStep .Photo img{
+  width: 100%;
+  display: block;
+}
+.SectionStep .IcerikStep h3{
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.SectionStep .IcerikStep p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #111;
+}
+.SectionStep .IcerikStep .btn{
+  margin-top: 50px;
+
+}
+.SectionStep .Photo{
+  padding-top: 100px;
+}
+
+/*FOOTER*/
+
+.footer{
+  background-color:#141618 ;
+}
+
+ .footer .container{
+   padding: 80px 0;
+   display: flex;
+   flex-direction:column;
+ }
+
+.footer .FooterLogo{
+  margin-bottom: 40px;
+}
+.footer .FooterMenu{
+  display: flex;
+}
+.footer .FooterMenu nav{
+  margin-right: 32px;
+}
+.footer .FooterMenu nav h6{
+letter-spacing: 1.6px;
+color: #fff;
+margin-bottom: 15px;
+}
+.footer .FooterMenu nav ul li{
+  margin-bottom: 6px;
+}
+
+.footer .FooterMenu nav ul li  a{
+display:block;
+font-size: 16px;
+line-height: 150%;
+color: rgb(255, 255, 255, .5);
+transition: 200ms  color;
+}
+.footer .FooterMenu nav ul li  a:hover{
+  color: #fff;
+  }
+
+  .footer .FooterMenu .FooterSearch{
+    margin-left: auto;
+
+  }
+  
+  .footer .FooterMenu .FooterSearch h6{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .footer .FooterMenu .FooterSearch form{
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .footer .FooterMenu .FooterSearch input{
+   height: 48px;
+   width: 375px;
+   background-color: #21252d;
+   padding: 0 15px;
+   color: #fff;
+
+  }
+  .footer .FooterMenu .FooterSearch button{
+    width: 48px;
+    height: 48px;
+    background:#316aff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+
+  }
+
+  .footer .Tescil{
+    padding-top:25px;
+    margin-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    color:rgba(255, 255, 255, .5) ;
+  }
+  .footer .Tescil a{
+    margin-right: 10px;
+    color:rgba(255, 255, 255, .5) ;
+    transition: 200ms color;
+
+  }
+
+  .footer .Tescil a:hover{
+    color: #fff;
+
+  }
+  .footer .Tescil .Haklarim{
+    margin-left: 10px;
+  }
