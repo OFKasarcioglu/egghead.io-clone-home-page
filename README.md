@@ -1,4 +1,4 @@
-# START BOOTSTRAP TEMPLATE
+# EGGHEAD.IO CLONE
 
 ## Projenin Amacı
 ** HTML,CSS ile EGGHEAD.IO web sitesini sıfıdan HTML ve CSS ile geliştirdim.
